@@ -7,6 +7,9 @@ echo "The first argument is $1."
 
 echo "Value of environment variable ENV_VAR_1 is: $ENV_VAR_1"
 
+echo "Value of environment variable ENV_VAR_1 is: $ENV_VAR_2"
+
+
 count=0
 while [ "$count" -lt 20 ]; do
     count=$((count + 1))
