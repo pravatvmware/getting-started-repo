@@ -7,7 +7,7 @@ echo "The first argument is $1."
 
 echo "Value of environment variable ENV_VAR_1 is: $ENV_VAR_1"
 
-echo "Value of environment variable ENV_VAR_1 is: $ENV_VAR_2"
+echo "Value of environment variable ENV_VAR_2 is: $ENV_VAR_2"
 
 
 count=0
