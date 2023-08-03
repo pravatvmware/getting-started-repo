@@ -6,7 +6,7 @@ pipelines:
     lock_behavior: none
     display_order: -1
     materials:
-      git-6043edc:
+      git-6043edd:
         git: https://github.com/pravatvmware/getting-started-repo
         shallow_clone: false
         auto_update: true
