@@ -24,6 +24,6 @@ pipelines:
             tasks:
             - exec:
                 arguments:
-                - CyberLifeAllLife
+                - CyberLifeHelloPipeline3
                 command: ./build
                 run_if: passed
