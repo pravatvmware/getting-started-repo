@@ -24,6 +24,6 @@ pipelines:
             tasks:
             - exec:
                 arguments:
-                - TSYJ9974
+                - CyberLife
                 command: ./build
                 run_if: passed
