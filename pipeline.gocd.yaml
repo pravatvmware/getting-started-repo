@@ -9,7 +9,8 @@ pipelines:
       git-6043edc:
         git: https://github.com/pravatvmware/getting-started-repo
         shallow_clone: false
-        auto_update: true        
+        auto_update: true
+        branch: develop
     stages:
     - build:
         fetch_materials: true
