@@ -1,6 +1,6 @@
 format_version: 10
 pipelines:
-  My-New-Pipeline3:
+  My-New-Pipeline4:
     group: PipelineGroup1
     label_template: ${COUNT}
     lock_behavior: none
