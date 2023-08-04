@@ -10,7 +10,6 @@ pipelines:
         git: https://github.com/pravatvmware/getting-started-repo.git
         shallow_clone: false
         auto_update: true
-        branch: test
     stages:
     - buildstage:
         fetch_materials: true
