@@ -1,13 +1,30 @@
+format_version: 10
 pipelines:
-  repo-a-pipeline-one:
-    group: pipeline-group-a
+  My-New-Pipeline2:
+    group: PipelineGroup1
+    label_template: ${COUNT}
+    lock_behavior: none
+    display_order: -1
     materials:
-      git:
-        type: config-repo
-  repo-a-pipeline-two:
-    group: pipeline-group-a
-    materials:
-      git:
-        type: config-repo
-      upstream:
-        pipeline: repo-a-pipeline-one
+      git-0902cbd:
+        git: https://github.com/pravatvmware/getting-started-repo.git
+        shallow_clone: false
+        auto_update: true
+        branch: test
+    stages:
+    - buildstage:
+        fetch_materials: true
+        keep_artifacts: false
+        clean_workspace: false
+        approval:
+          type: success
+          allow_only_on_success: false
+        jobs:
+          buildjob:
+            timeout: 0
+            tasks:
+            - exec:
+                arguments:
+                - TSYJ9974
+                command: ./build
+                run_if: passed
