@@ -1,15 +1,16 @@
 format_version: 10
 pipelines:
   My-New-Pipeline2:
-    group: defaultGroup
+    group: PipelineGroup1
     label_template: ${COUNT}
     lock_behavior: none
     display_order: -1
     materials:
-      git-0902cbd:
+      git-e3aa21a:
         git: https://github.com/pravatvmware/getting-started-repo.git
         shallow_clone: false
         auto_update: true
+        branch: test
     stages:
     - buildstage:
         fetch_materials: true
